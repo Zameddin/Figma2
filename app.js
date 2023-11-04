@@ -81,6 +81,7 @@ function displayTasks() {
     for (const task of tasks) {
         const li = document.createElement('li');
         let photo = document.createElement('img');
+        photo.alt = 'delete button'
         photo.src = "./Images/xCL.svg";
 
         if (tasksList.childElementCount !== 0) {
