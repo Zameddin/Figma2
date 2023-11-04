@@ -27,7 +27,7 @@ imageSort.addEventListener('click', (e) => {
     if (flag == true) {
         imageSort.src = "./Images/top.svg";
         imageSort.addEventListener("mouseleave", event => {
-            event.target.src = "./Images/topCl.svg"
+            event.target.src = "./Images/topCL.svg"
         })
         imageSort.addEventListener("mouseover", event => {
             event.target.src = "./Images/top.svg"
