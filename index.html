@@ -1,19 +1,36 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="./style.css">
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yapılacaklar Listesi</title>
 </head>
+
 <body>
-    
+    <div id="todo-list">
+        <div class="main">
+            <p class="tittleYellow"></p>
+            <h1 class="header">To-do list</h1>
+            <img onclick="toggleSortOrder()" class="sortImage" src="./Images/downCL.svg">
+            <img onclick="toggleSortOrder()" class="sortImage hidden" src="./Images/down.svg">
+            <div class="task-list-container">
+                <ol id="tasks"></ol>
+            </div>
+            <div class="app__input">
+                <img class="delete-li " src="./Images/xCL.svg">
+                <img class="delete-li hidden" src="./Images/x.svg">
+                <input type="text" id="task" placeholder="Yeni bir görev ekleyin">
+            </div>
+            <img src="./Images/add.svg" id="addTask">
+        </div>
+    </div>
 
+    <script src="./app.js">
 
-
-
-
-
-    <script src="./app.js"></script>
+    </script>
 </body>
+
+</html>
+</body>
+
 </html>
