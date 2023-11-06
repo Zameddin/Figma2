@@ -150,10 +150,11 @@ function removeTask(task) {
 
 function toggleSortOrder() {
     if (ascendingSort) {
-            tasks.sort().reverse();
+              tasks.sort(); 
    
     } else {
-         tasks.sort();
+         tasks.sort().reverse();
+     
     }
     ascendingSort = !ascendingSort;
     displayTasks();
