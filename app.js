@@ -50,14 +50,14 @@ let flag2 = true;
 addTaskButton.addEventListener('click', () => {
     let checkValue = taskInput.value
     if (checkValue.trim() !== "") {
-        if (flag2) {
+     
             const taskText = taskInput.value.trim();
             tasks.push(taskText);
             taskInput.value = '';
             displayTasks();
             appInput.style.display = 'none';
             flag2 = !flag2;
-        }
+        
     } else {
         appInput.style.display = 'block';
         flag2 = !flag2
@@ -117,14 +117,14 @@ taskInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         let check = taskInput.value
         if (check.trim() !== "") {
-            if (flag2) {
+           
                 const taskText = taskInput.value.trim();
                 tasks.push(taskText);
                 taskInput.value = '';
                 displayTasks();
                 appInput.style.display = 'none';
                 flag2 = !flag2;
-            }
+            
         } else {
             appInput.style.display = 'block';
             flag2 = !flag2
